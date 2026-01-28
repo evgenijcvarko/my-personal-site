@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя первая страница на GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Привет, я <span class="highlight">[Твоё Имя]</span> 👋</h1>
+            <p class="subtitle">Это мой первый проект на GitHub!</p>
+        </header>
+        
+        <main>
+            <section class="about">
+                <h2><i class="fas fa-user"></i> Обо мне</h2>
+                <p>Я начинающий разработчик, изучаю Git и GitHub. Этот сайт — моя первая работа с системой контроля версий.</p>
+            </section>
+            
+            <section class="skills">
+                <h2><i class="fas fa-code"></i> Что я изучаю</h2>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git и GitHub</li>
+                    <li>React (в планах)</li>
+                </ul>
+            </section>
+            
+            <section class="contact">
+                <h2><i class="fas fa-envelope"></i> Контакты</h2>
+                <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+                <p>GitHub: <a href="https://github.com/твойлогин">github.com/твойлогин</a></p>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Создано с ❤️ и помощью GitHub</p>
+            <p class="small">Последнее обновление: <span id="date"></span></p>
+        </footer>
+    </div>
+
+    <script>
+        // Автоматически обновляем дату
+        document.getElementById('date').textContent = new Date().toLocaleDateString('ru-RU');
+        
+        // Простой эффект при наведении на заголовок
+        document.querySelector('h1').addEventListener('mouseover', function() {
+            this.style.transform = 'scale(1.05)';
+        });
+        document.querySelector('h1').addEventListener('mouseout', function() {
+            this.style.transform = 'scale(1)';
+        });
+    </script>
+</body>
+</html>
